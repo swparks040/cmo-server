@@ -1,0 +1,12 @@
+[
+    {
+        "model": "cmoapi.response",
+        "pk": 1,
+        "fields": {
+            "message": 1,
+            "author": 1,
+            "content": "Test Response 1",
+            "created_on": "2022-01-05"
+        }
+    }
+]

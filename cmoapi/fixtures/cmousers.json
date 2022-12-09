@@ -1,0 +1,28 @@
+[
+    {
+        "model": "cmoapi.cmouser",
+        "pk": 1,
+        "fields": {
+            "user": 1,
+            "job_position": "IT Manager",
+            "salary": "115000",
+            "birthday": "1983-10-05",
+            "date_hired": "2021-02-15",
+            "date_evaluated": "2021-02-15",
+            "profile_image_url": "http://www.google.com"
+        }
+    },
+    {
+        "model": "cmoapi.cmouser",
+        "pk": 2,
+        "fields": {
+            "user": 2,
+            "job_position": "HR Manager",
+            "salary": "97000",
+            "birthday": "1985-09-25",
+            "date_hired": "2021-02-15",
+            "date_evaluated": "2021-02-15",
+            "profile_image_url": "http://www.google.com"
+        }
+    }
+]

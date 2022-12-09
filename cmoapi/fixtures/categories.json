@@ -1,0 +1,30 @@
+[
+    {
+        "model": "cmoapi.category",
+        "pk": 1,
+        "fields": {
+            "label": "PTO"
+        }
+    },
+    {
+        "model": "cmoapi.category",
+        "pk": 2,
+        "fields": {
+            "label": "Promotions"
+        }
+    },
+    {
+        "model": "cmoapi.category",
+        "pk": 3,
+        "fields": {
+            "label": "Evaluations"
+        }
+    },
+    {
+        "model": "cmoapi.category",
+        "pk": 4,
+        "fields": {
+            "label": "Family"
+        }
+    }
+]

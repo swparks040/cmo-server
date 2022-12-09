@@ -1,0 +1,23 @@
+[
+    {
+        "model": "cmoapi.family_member_relationship",
+        "pk": 1,
+        "fields": {
+            "label": "Spouse"
+        }
+    },
+    {
+        "model": "cmoapi.family_member_relationship",
+        "pk": 2,
+        "fields": {
+            "label": "Child"
+        }
+    },
+    {
+        "model": "cmoapi.family_member_relationship",
+        "pk": 3,
+        "fields": {
+            "label": "Dependant"
+        }
+    }
+]

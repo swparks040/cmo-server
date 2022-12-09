@@ -1,0 +1,41 @@
+[
+    {
+        "model": "cmoapi.family_member",
+        "pk": 1,
+        "fields": {
+            "cmouser": 1,
+            "family_member_relationship": 1,
+            "first_name": "Sydnee",
+            "last_name": "Parks",
+            "birthday": "1985-09-25",
+            "aniversary": "2009-12-05",
+            "graduation": "Null"
+        }
+    },
+    {
+        "model": "cmoapi.family_member",
+        "pk": 2,
+        "fields": {
+            "cmouser": 1,
+            "family_member_relationship": 2,
+            "first_name": "Harrison",
+            "last_name": "Parks",
+            "birthday": "2016-04-20",
+            "aniversary": "Null",
+            "graduation": "2023-06-25"
+        }
+    },
+    {
+        "model": "cmoapi.family_member",
+        "pk": 3,
+        "fields": {
+            "cmouser": 1,
+            "family_member_relationship": 2,
+            "first_name": "Henry",
+            "last_name": "Parks",
+            "birthday": "2019-02-09",
+            "aniversary": "Null",
+            "graduation": "2023-06-25"
+        }
+    }
+]

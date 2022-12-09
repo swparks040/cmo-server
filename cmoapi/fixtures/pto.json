@@ -1,0 +1,23 @@
+[
+    {
+        "model": "cmoapi.pto",
+        "pk": 1,
+        "fields": {
+            "cmouser": 1,
+            "total_days": 21,
+            "days_used": 4,
+            "days_remaining": 17
+        }
+    },
+    {
+        "model": "cmoapi.pto",
+        "pk": 2,
+        "fields": {
+            "cmouser": 2,
+            "total_days": 21,
+            "days_used": 9,
+            "days_remaining": 12
+        }
+    }
+    
+]

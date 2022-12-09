@@ -1,0 +1,13 @@
+[
+    {
+        "model": "cmoapi.message",
+        "pk": 1,
+        "fields": {
+            "cmouser": 1,
+            "category": 1,
+            "publication_date": "2022-01-05",
+            "title": "Test Title 1",
+            "content": "Test Content 1"
+        }
+    }
+]
