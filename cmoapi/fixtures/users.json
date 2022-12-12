@@ -1,0 +1,87 @@
+[
+    {
+        "model": "auth.user",
+        "pk": 1,
+        "fields": {
+            "username": "@swparks",
+            "password": "scott",
+            "first_name": "Scott",
+            "last_name": "Parks",
+            "email": "swparks@nailedit.com",
+            "is_staff": true,
+            "is_active": true,
+            "date_joined": "2020-10-21T21:15:55.764Z"
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": 2,
+        "fields": {
+            "username": "@jsalexa",
+            "password": "jsacodes",
+            "first_name": "James Scott",
+            "last_name": "Alexander",
+            "email": "jsa@nailedit.com",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2020-10-21T21:15:55.764Z"
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": 3,
+        "fields": {
+            "username": "@bherbis",
+            "password": "kwizzed",
+            "first_name": "Brandon",
+            "last_name": "Herbison",
+            "email": "bherbis@nailedit.com",
+            "is_staff": true,
+            "is_active": true,
+            "date_joined": "2020-10-21T21:15:55.764Z"
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": 4,
+        "fields": {
+            "username": "@crpelto",
+            "password": "bussin",
+            "first_name": "C. Russell",
+            "last_name": "Pelton",
+            "email": "crpelto@nailedit.com",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2020-10-21T21:15:55.764Z"
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": 5,
+        "fields": {
+            "username": "@aschanc",
+            "password": "teebag",
+            "first_name": "Adam",
+            "last_name": "Chance",
+            "email": "aschanc@nailedit.com",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2020-10-21T21:15:55.764Z"
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": 6,
+        "fields": {
+            "username": "@nsscoach",
+            "password": "whereareyourdevtools",
+            "first_name": "Steve",
+            "last_name": "Brownlee",
+            "email": "nsscoach@nailedit.com",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2020-10-21T21:15:55.764Z"
+        }
+    }
+
+]
