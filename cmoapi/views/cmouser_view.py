@@ -31,6 +31,7 @@ class CMOUserView(ViewSet):
             birthday=request.data["birthday"],
             date_hired=request.data["date_hired"],
             date_evaluated=request.data["date_evaluated"],
+            date_promoted=request.data["date_promoted"],
             profile_image_url=request.data["profile_image_url"],
         )
         serializer = CMOUserSerializer(cmouser)
@@ -46,6 +47,7 @@ class CMOUserView(ViewSet):
         cmouser.birthday = request.data["birthday"]
         cmouser.date_hired = request.data["date_hired"]
         cmouser.date_evaluated = request.data["date_evaluated"]
+        cmouser.date_promoted = request.data["date_promoted"]
         cmouser.profile_image_url = request.data["profile_image_url"]
         user.save()
         cmouser.save()
@@ -76,5 +78,6 @@ class CMOUserSerializer(serializers.ModelSerializer):
             "birthday",
             "date_hired",
             "date_evaluated",
+            "date_promoted",
             "profile_image_url",
         )

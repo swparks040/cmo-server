@@ -1,6 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
-# from rest_framework.authtoken.models import Token
+from rest_framework.authtoken.models import Token
 
 class CMOUser(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
@@ -9,6 +9,7 @@ class CMOUser(models.Model):
     birthday = models.DateField()
     date_hired = models.DateField()
     date_evaluated = models.DateField()
+    date_promoted = models.DateField()
     profile_image_url = models.TextField()
     
     @property

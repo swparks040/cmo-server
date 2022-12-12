@@ -9,6 +9,7 @@
             "birthday": "1983-10-05",
             "date_hired": "2021-02-15",
             "date_evaluated": "2021-02-15",
+            "date_promoted": "2021-02-15",
             "profile_image_url": "http://www.google.com"
         }
     },
@@ -22,6 +23,7 @@
             "birthday": "1985-09-25",
             "date_hired": "2021-02-15",
             "date_evaluated": "2021-02-15",
+            "date_promoted": "2021-02-15",
             "profile_image_url": "http://www.google.com"
         }
     }

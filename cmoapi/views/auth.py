@@ -57,13 +57,14 @@ def register_user(request):
 
     # Now save the extra info in the cmoapi_CMOUser table
     cmouser = CMOUser.objects.create(
+        user=new_user,
         job_position=request.data['job_position'],
         salary=request.data['salary'],
         birthday=request.data['birthday'],
         date_hired=request.data['date_hired'],
         date_evaluated=request.data['date_evaluated'],
-        profile_image_url=request.data['profile_image_url'],
-        user=new_user
+        date_promoted=request.data['date_promoted'],
+        profile_image_url=request.data['profile_image_url']
     )
     # Use the REST Framework's token generator on the new user account
     token = Token.objects.create(user=cmouser.user)
