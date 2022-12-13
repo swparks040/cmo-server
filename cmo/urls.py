@@ -25,9 +25,9 @@ router.register(r'messages', MessageView, 'message')
 router.register(r'pto', PTOView, 'pto')
 router.register(r'categories', CategoryView, 'category')
 router.register(r'responses', ResponseView, 'response')
-router.register(r'family_member_relationships', FamilyMemberRelationshipView, 'family_member_relationship')
-router.register(r'family_members', FamilyMemberView, 'family_member')
-router.register(r'cmo_users', CMOUserView, 'cmo_user')
+router.register(r'familymemberrelationships', FamilyMemberRelationshipView, 'familymemberrelationship')
+router.register(r'familymembers', FamilyMemberView, 'familymember')
+router.register(r'cmousers', CMOUserView, 'cmouser')
 
 urlpatterns = [
     path('register', register_user),

@@ -62,11 +62,11 @@ class UserSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = User
-        fields = ("username", "password", "first_name", "last_name", "email", "is_staff")
+        fields = ("username", "password", "first_name", "last_name", "email", "is_staff", "is_active", "date_joined")
 
 class CMOUserSerializer(serializers.ModelSerializer):
 
-    # user = UserSerializer(many=False)
+    user = UserSerializer(many=False)
     class Meta:
         model = CMOUser
         fields = (

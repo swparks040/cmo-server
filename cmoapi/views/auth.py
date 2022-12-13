@@ -52,7 +52,7 @@ def register_user(request):
         email=request.data['email'],
         is_staff=request.data['is_staff'],
         is_active=request.data['is_active'],
-        date_joined=request.data['date_joined']
+        date_joined=request.data['date_joined'],
     )
 
     # Now save the extra info in the cmoapi_CMOUser table
