@@ -18,6 +18,46 @@
             "days_used": 9,
             "days_remaining": 12
         }
+    },
+    {
+        "model": "cmoapi.pto",
+        "pk": 3,
+        "fields": {
+            "cmouser": 3,
+            "total_days": 21,
+            "days_used": 0,
+            "days_remaining": 21
+        }
+    },
+    {
+        "model": "cmoapi.pto",
+        "pk": 4,
+        "fields": {
+            "cmouser": 4,
+            "total_days": 21,
+            "days_used": 1,
+            "days_remaining": 20
+        }
+    },
+    {
+        "model": "cmoapi.pto",
+        "pk": 5,
+        "fields": {
+            "cmouser": 5,
+            "total_days": 21,
+            "days_used": 4,
+            "days_remaining": 17
+        }
+    },
+    {
+        "model": "cmoapi.pto",
+        "pk": 6,
+        "fields": {
+            "cmouser": 6,
+            "total_days": 21,
+            "days_used": 3,
+            "days_remaining": 18
+        }
     }
     
 ]

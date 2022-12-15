@@ -15,7 +15,7 @@ class FamilyMemberRelationshipView(ViewSet):
         return Response(serializer.data, status=status.HTTP_200_OK)
 
     def list(self, request):
-        family_member_relationships = FamilyMemberRelationship.objects.all().order_by('label')
+        family_member_relationships = FamilyMemberRelationship.objects.all()
         serializer = FamilyMemberRelationshipSerializer(family_member_relationships, many=True)
         return Response(serializer.data, status=status.HTTP_200_OK)
 

@@ -7,7 +7,16 @@ from cmoapi.models import CMOUser
 
 
 class CMOUserView(ViewSet):
+
     def retrieve(self, request, pk):
+        if (pk=="current"):
+            user=request.auth.user
+            cmouser=CMOUser.objects.get(user=user)
+            data={
+                "id": cmouser.id,
+                "is_staff": user.is_staff,
+            }
+            return Response(data, status=status.HTTP_200_OK)
         try:
             cmouser = CMOUser.objects.get(pk=pk)
         except CMOUser.DoesNotExist:
