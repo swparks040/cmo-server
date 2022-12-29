@@ -19,6 +19,9 @@ class MessageView(ViewSet):
 
     def list(self, request):
         messages = Message.objects.all().order_by('title')
+        filter_by = request.query_params.get('user', None)
+        if filter_by is not None:
+            messages = messages.filter(cmouser__user=request.auth.user)
         serializer = MessageSerializer(messages, many=True)
         return Response(serializer.data, status=status.HTTP_200_OK)
 

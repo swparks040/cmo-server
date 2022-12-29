@@ -39,14 +39,16 @@ class FamilyMemberView(ViewSet):
         return Response(serializer.data, status = status.HTTP_201_CREATED)
 
     def update(self, request, pk):
+        cmouser = CMOUser.objects.get(user=request.auth.user)
         family_member = FamilyMember.objects.get(pk=pk)
-        family_member.cmouser = request.data["cmouser"]
+        cmouser = cmouser
         family_member.family_member_relationship = request.data["family_member_relationship"]
         family_member.first_name = request.data["first_name"]
         family_member.last_name = request.data["last_name"]
         family_member.birthday = request.data["birthday"]
         family_member.anniversary = request.data["anniversary"]
         family_member.graduation = request.data["graduation"]
+        cmouser.save()
         family_member.save()
         return Response(None, status=status.HTTP_204_NO_CONTENT)
 

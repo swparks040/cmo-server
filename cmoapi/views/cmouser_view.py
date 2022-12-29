@@ -28,6 +28,9 @@ class CMOUserView(ViewSet):
 
     def list(self, request):
         cmousers = CMOUser.objects.all()
+        filter_by = request.query_params.get('user', None)
+        if filter_by is not None:
+            cmousers = cmousers.filter(user=request.auth.user)
         serializer = CMOUserSerializer(cmousers, many=True)
         return Response(serializer.data, status=status.HTTP_200_OK)
 
