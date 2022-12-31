@@ -30,7 +30,7 @@ class ResponseView(ViewSet):
             created_on=date.today()
             )
         serializer = ResponseSerializer(response)
-        return Response(serializer.data, status = status.HTTP_201_CREATED)
+        return Response(serializer.data, status=status.HTTP_201_CREATED)
 
     def update(self, request, pk):
         response = Response.objects.get(pk=pk)
@@ -50,8 +50,7 @@ class CMOUserSerializer(serializers.ModelSerializer):
     class Meta:
         model = CMOUser
         fields = ('username', 'tokenNumber',  )
-class ResponseSerializer(serializers.ModelSerializer):
-        
+class ResponseSerializer(serializers.ModelSerializer): 
         class Meta:
             model = Response
             fields = ('id', 'message', 'author', 'content', 'created_on', )
