@@ -28,6 +28,11 @@ class CMOUserView(ViewSet):
 
     def list(self, request):
         cmousers = CMOUser.objects.all()
+
+        if "is_staff" in request.query_params:
+            query_value = request.query_params["is_staff"]
+            cmousers = cmousers.filter(user__is_staff=query_value)
+
         filter_by = request.query_params.get('user', None)
         if filter_by is not None:
             cmousers = cmousers.filter(user=request.auth.user)
@@ -52,8 +57,6 @@ class CMOUserView(ViewSet):
     def update(self, request, pk):
         cmouser = CMOUser.objects.get(pk=pk)
         user = User.objects.get(pk=cmouser.user_id)
-        user.is_staff = request.data["is_staff"]
-        cmouser.full_name = request.data["full_name"]
         cmouser.job_position = request.data["job_position"]
         cmouser.salary = request.data["salary"]
         cmouser.birthday = request.data["birthday"]

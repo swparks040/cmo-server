@@ -17,6 +17,11 @@ class FamilyMemberView(ViewSet):
 
     def list(self, request):
         family_members = FamilyMember.objects.all()
+
+        if "cmouser" in request.query_params:
+            query_value = request.query_params["cmouser"]
+            family_members = family_members.filter(cmouser=query_value)
+            
         filter_by = request.query_params.get('user', None)
         if filter_by is not None:
             family_members = family_members.filter(cmouser__user=request.auth.user)
