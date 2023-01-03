@@ -18,13 +18,13 @@ from django.urls import path
 from django.conf.urls import include
 from cmoapi.views import register_user, login_user
 from rest_framework import routers
-from cmoapi.views import MessageView, PTOView, CategoryView, ResponseView, FamilyMemberRelationshipView, FamilyMemberView, CMOUserView
+from cmoapi.views import MessageView, PTOView, CategoryView, CommentView, FamilyMemberRelationshipView, FamilyMemberView, CMOUserView
 
 router = routers.DefaultRouter(trailing_slash=False)
 router.register(r'messages', MessageView, 'message')
 router.register(r'pto', PTOView, 'pto')
 router.register(r'categories', CategoryView, 'category')
-router.register(r'responses', ResponseView, 'response')
+router.register(r'comments', CommentView, 'comment')
 router.register(r'familymemberrelationships', FamilyMemberRelationshipView, 'familymemberrelationship')
 router.register(r'familymembers', FamilyMemberView, 'familymember')
 router.register(r'cmousers', CMOUserView, 'cmouser')

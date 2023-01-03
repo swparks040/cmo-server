@@ -1,6 +1,6 @@
 [
     {
-        "model": "cmoapi.response",
+        "model": "cmoapi.comment",
         "pk": 1,
         "fields": {
             "message": 1,
