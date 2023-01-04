@@ -26,5 +26,12 @@
         "fields": {
             "label": "Family"
         }
+    },
+    {
+        "model": "cmoapi.category",
+        "pk": 5,
+        "fields": {
+            "label": "Other"
+        }
     }
 ]

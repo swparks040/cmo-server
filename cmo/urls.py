@@ -18,7 +18,7 @@ from django.urls import path
 from django.conf.urls import include
 from cmoapi.views import register_user, login_user
 from rest_framework import routers
-from cmoapi.views import MessageView, PTOView, CategoryView, CommentView, FamilyMemberRelationshipView, FamilyMemberView, CMOUserView
+from cmoapi.views import MessageView, PTOView, CategoryView, CommentView, FamilyMemberRelationshipView, FamilyMemberView, CMOUserView, PTORequestView
 
 router = routers.DefaultRouter(trailing_slash=False)
 router.register(r'messages', MessageView, 'message')
@@ -28,6 +28,7 @@ router.register(r'comments', CommentView, 'comment')
 router.register(r'familymemberrelationships', FamilyMemberRelationshipView, 'familymemberrelationship')
 router.register(r'familymembers', FamilyMemberView, 'familymember')
 router.register(r'cmousers', CMOUserView, 'cmouser')
+router.register(r'ptorequests', PTORequestView, 'ptorequest')
 
 urlpatterns = [
     path('register', register_user),

@@ -51,9 +51,7 @@ def register_user(request):
         first_name=request.data['first_name'],
         last_name=request.data['last_name'],
         email=request.data['email'],
-        is_staff=request.data['is_staff'],
-        is_active=request.data['is_active'],
-        date_joined=request.data['date_joined'],
+        is_staff=request.data['is_staff']
     )
 
     # Now save the extra info in the cmoapi_CMOUser table
