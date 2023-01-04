@@ -4,13 +4,13 @@
         "pk": 1,
         "fields": {
             "user": 1,
-            "job_position": "IT Manager",
+            "job_position": "Web Developer",
             "salary": "115000",
             "birthday": "1983-10-05",
             "date_hired": "2021-02-15",
             "date_evaluated": "2021-02-15",
             "date_promoted": "2021-02-15",
-            "profile_image_url": "http://www.google.com"
+            "profile_image_url": "https://media-exp1.licdn.com/dms/image/C5603AQF976gF_e5o9w/profile-displayphoto-shrink_400_400/0/1664207792820?e=1676505600&v=beta&t=2oMu4YWXNCT3BDwhQcBoOVKmR9MFcxjQc7IcsJPN5as"
         }
     },
     {
@@ -18,13 +18,55 @@
         "pk": 2,
         "fields": {
             "user": 2,
-            "job_position": "HR Manager",
+            "job_position": "Web Developer",
             "salary": "97000",
             "birthday": "1985-09-25",
             "date_hired": "2021-02-15",
             "date_evaluated": "2021-02-15",
             "date_promoted": "2021-02-15",
-            "profile_image_url": "http://www.google.com"
+            "profile_image_url": ""
+        }
+    },
+    {
+        "model": "cmoapi.cmouser",
+        "pk": 3,
+        "fields": {
+            "user": 3,
+            "job_position": "Web Developer",
+            "salary": "97000",
+            "birthday": "1985-09-25",
+            "date_hired": "2021-02-15",
+            "date_evaluated": "2021-02-15",
+            "date_promoted": "2021-02-15",
+            "profile_image_url": "https://media-exp1.licdn.com/dms/image/D5603AQE4UIxbeN0L9g/profile-displayphoto-shrink_400_400/0/1664719772560?e=1676505600&v=beta&t=hSzd5np0-zdCWSEl17aGiDkkrTEM-3ChwVR3LCYGBpk"
+        }
+    },
+    {
+        "model": "cmoapi.cmouser",
+        "pk": 4,
+        "fields": {
+            "user": 4,
+            "job_position": "Web Developer",
+            "salary": "97000",
+            "birthday": "1985-09-25",
+            "date_hired": "2021-02-15",
+            "date_evaluated": "2021-02-15",
+            "date_promoted": "2021-02-15",
+            "profile_image_url": "https://media-exp1.licdn.com/dms/image/D4E35AQFDx6bFcq7dsA/profile-framedphoto-shrink_400_400/0/1665581466586?e=1671552000&v=beta&t=ut6W6EjJvEiIHvjTFCWjqFm0n8MS-5UzE3W49O9tEP0"
+        }
+    },
+    {
+        "model": "cmoapi.cmouser",
+        "pk": 5,
+        "fields": {
+            "user": 5,
+            "job_position": "Web Developer",
+            "salary": "97000",
+            "birthday": "1985-09-25",
+            "date_hired": "2021-02-15",
+            "date_evaluated": "2021-02-15",
+            "date_promoted": "2021-02-15",
+            "profile_image_url": "https://media-exp1.licdn.com/dms/image/D5635AQG4KcEJB9Q5MA/profile-framedphoto-shrink_400_400/0/1669824601418?e=1671552000&v=beta&t=KN9lnr5b6yCgvLlUH--slzkiIkWu9yVFKon-SNsx4UA"
         }
     }
 ]

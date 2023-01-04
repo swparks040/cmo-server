@@ -68,20 +68,6 @@
             "is_active": true,
             "date_joined": "2020-10-21T21:15:55.764Z"
         }
-    },
-    {
-        "model": "auth.user",
-        "pk": 6,
-        "fields": {
-            "username": "@nsscoach",
-            "password": "whereareyourdevtools",
-            "first_name": "Steve",
-            "last_name": "Brownlee",
-            "email": "nsscoach@nailedit.com",
-            "is_staff": false,
-            "is_active": true,
-            "date_joined": "2020-10-21T21:15:55.764Z"
-        }
     }
 
 ]

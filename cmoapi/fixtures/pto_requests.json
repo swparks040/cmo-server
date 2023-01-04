@@ -3,12 +3,12 @@
         "model": "cmoapi.ptorequest",
         "pk": 1,
         "fields": {
-            "pto": 1,
+            "pto": 2,
             "cmouser": 2,
             "start_date": "2022-03-01",
             "end_date": "2022-03-05",
             "days_requested": 5,
-            "justification": "Test Content 1",
+            "justification": "Going on vacay",
             "is_approved": false
         }
     }

@@ -10,21 +10,21 @@
         "model": "cmoapi.category",
         "pk": 2,
         "fields": {
-            "label": "Promotions"
+            "label": "Promotions/Evaluations"
         }
     },
     {
         "model": "cmoapi.category",
         "pk": 3,
         "fields": {
-            "label": "Evaluations"
+            "label": "Family"
         }
     },
     {
         "model": "cmoapi.category",
         "pk": 4,
         "fields": {
-            "label": "Family"
+            "label": "Workplace Issue"
         }
     },
     {
