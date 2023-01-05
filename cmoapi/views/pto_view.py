@@ -18,6 +18,11 @@ class PTOView(ViewSet):
 
     def list(self, request):
         ptos = PTO.objects.all()
+
+        if "cmouser" in request.query_params:
+            query_value = request.query_params["cmouser"]
+            ptos = ptos.filter(cmouser=query_value)
+            
         filter_by = request.query_params.get('user', None)
         if filter_by is not None:
             ptos = ptos.filter(cmouser__user=request.auth.user)

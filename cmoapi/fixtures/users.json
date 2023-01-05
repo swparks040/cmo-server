@@ -4,7 +4,7 @@
         "pk": 1,
         "fields": {
             "username": "@swparks",
-            "password": "scott",
+            "password": "pbkdf2_sha256$390000$ESBUAtkx96Az7ROwQRCsIt$wJGriNUKR4Gch2L/oMSMfbh5+TLmcYd0hGIIZstONI4=",
             "first_name": "Scott",
             "last_name": "Parks",
             "email": "swparks@nailedit.com",
@@ -18,7 +18,7 @@
         "pk": 2,
         "fields": {
             "username": "@jsalexa",
-            "password": "jsacodes",
+            "password": "pbkdf2_sha256$390000$ESBUAtkx96Az7ROwQRCsIt$wJGriNUKR4Gch2L/oMSMfbh5+TLmcYd0hGIIZstONI4=",
             "first_name": "James Scott",
             "last_name": "Alexander",
             "email": "jsa@nailedit.com",
@@ -32,11 +32,11 @@
         "pk": 3,
         "fields": {
             "username": "@bherbis",
-            "password": "kwizzed",
+            "password": "pbkdf2_sha256$390000$ESBUAtkx96Az7ROwQRCsIt$wJGriNUKR4Gch2L/oMSMfbh5+TLmcYd0hGIIZstONI4=",
             "first_name": "Brandon",
             "last_name": "Herbison",
             "email": "bherbis@nailedit.com",
-            "is_staff": true,
+            "is_staff": false,
             "is_active": true,
             "date_joined": "2020-10-21T21:15:55.764Z"
         }
@@ -46,7 +46,7 @@
         "pk": 4,
         "fields": {
             "username": "@crpelto",
-            "password": "bussin",
+            "password": "pbkdf2_sha256$390000$ESBUAtkx96Az7ROwQRCsIt$wJGriNUKR4Gch2L/oMSMfbh5+TLmcYd0hGIIZstONI4=",
             "first_name": "C. Russell",
             "last_name": "Pelton",
             "email": "crpelto@nailedit.com",
@@ -60,10 +60,38 @@
         "pk": 5,
         "fields": {
             "username": "@aschanc",
-            "password": "teebag",
+            "password": "pbkdf2_sha256$390000$ESBUAtkx96Az7ROwQRCsIt$wJGriNUKR4Gch2L/oMSMfbh5+TLmcYd0hGIIZstONI4=",
             "first_name": "Adam",
             "last_name": "Chance",
             "email": "aschanc@nailedit.com",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2020-10-21T21:15:55.764Z"
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": 6,
+        "fields": {
+            "username": "@oliviap",
+            "password": "pbkdf2_sha256$390000$ESBUAtkx96Az7ROwQRCsIt$wJGriNUKR4Gch2L/oMSMfbh5+TLmcYd0hGIIZstONI4=",
+            "first_name": "Olivia",
+            "last_name": "Parks",
+            "email": "oliviap@nailedit.com",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2020-10-21T21:15:55.764Z"
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": 7,
+        "fields": {
+            "username": "@stevebrownlee",
+            "password": "pbkdf2_sha256$390000$srbkmD7hgLhgTYhHvGSGen$DCr01oKqIpHTpoi9DwePog/AIlQ64bEtlvFFK8NkkaA=",
+            "first_name": "Steve",
+            "last_name": "Brownlee",
+            "email": "steve@nailedit.com",
             "is_staff": false,
             "is_active": true,
             "date_joined": "2020-10-21T21:15:55.764Z"

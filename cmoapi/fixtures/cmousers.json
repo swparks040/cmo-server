@@ -68,5 +68,33 @@
             "date_promoted": "2021-02-15",
             "profile_image_url": "https://media-exp1.licdn.com/dms/image/D5635AQG4KcEJB9Q5MA/profile-framedphoto-shrink_400_400/0/1669824601418?e=1671552000&v=beta&t=KN9lnr5b6yCgvLlUH--slzkiIkWu9yVFKon-SNsx4UA"
         }
+    },
+    {
+        "model": "cmoapi.cmouser",
+        "pk": 6,
+        "fields": {
+            "user": 6,
+            "job_position": "Web Developer",
+            "salary": "97000",
+            "birthday": "1985-09-25",
+            "date_hired": "2021-02-15",
+            "date_evaluated": "2021-02-15",
+            "date_promoted": "2021-02-15",
+            "profile_image_url": ""
+        }
+    },
+    {
+        "model": "cmoapi.cmouser",
+        "pk": 7,
+        "fields": {
+            "user": 7,
+            "job_position": "Web Developer",
+            "salary": "97000",
+            "birthday": "1985-09-25",
+            "date_hired": "2021-02-15",
+            "date_evaluated": "2021-02-15",
+            "date_promoted": "2021-02-15",
+            "profile_image_url": ""
+        }
     }
 ]

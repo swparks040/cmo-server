@@ -48,5 +48,25 @@
             "days_used": 4,
             "days_remaining": 17
         }
+    },
+    {
+        "model": "cmoapi.pto",
+        "pk": 6,
+        "fields": {
+            "cmouser": 6,
+            "total_days": 21,
+            "days_used": 4,
+            "days_remaining": 17
+        }
+    },
+    {
+        "model": "cmoapi.pto",
+        "pk": 7,
+        "fields": {
+            "cmouser": 7,
+            "total_days": 21,
+            "days_used": 4,
+            "days_remaining": 17
+        }
     }
 ]
