@@ -46,7 +46,7 @@ class PTORequestView(ViewSet):
     def update(self, request, pk):
         cmouser = CMOUser.objects.get(user=request.auth.user)
         pto_request = PTORequest.objects.get(pk=pk)
-        pto = PTO.objects.get(pk=request.data["pto"])
+        pto = PTO.objects.get(pk=pk)
         cmouser = cmouser
         pto = pto
         pto_request.start_date = request.data["start_date"]
@@ -67,6 +67,6 @@ class PTORequestSerializer(serializers.ModelSerializer):
     """JSON serializer for PTO requests"""
     class Meta:
         model = PTORequest
-        fields = ('id', 'cmouser', 'pto', 'start_date', 'end_date', 'days_requested', 'justification', 'is_approved')
+        fields = ('id', 'cmouser', 'pto', 'start_date', 'end_date', 'days_requested', 'justification', 'is_approved', )
         depth = 1
 
