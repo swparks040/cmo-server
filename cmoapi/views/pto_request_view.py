@@ -22,6 +22,10 @@ class PTORequestView(ViewSet):
             query_value = request.query_params["cmouser"]
             pto_requests = pto_requests.filter(cmouser=query_value)
 
+        if "is_approved" in request.query_params:
+            query_value = request.query_params["is_approved"]
+            pto_requests = pto_requests.filter(is_approved=query_value)
+
         filter_by = request.query_params.get('user', None)
         if filter_by is not None:
             pto_requests = pto_requests.filter(cmouser__user=request.auth.user)
@@ -68,5 +72,5 @@ class PTORequestSerializer(serializers.ModelSerializer):
     class Meta:
         model = PTORequest
         fields = ('id', 'cmouser', 'pto', 'start_date', 'end_date', 'days_requested', 'justification', 'is_approved', )
-        depth = 1
+        depth = 2
 

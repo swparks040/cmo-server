@@ -41,8 +41,9 @@ class PTOView(ViewSet):
         return Response(serializer.data, status=status.HTTP_201_CREATED)
 
     def update(self, request, pk):
+        cmouser = CMOUser.objects.get(user=request.auth.user)
         pto = PTO.objects.get(pk=pk)
-        pto.cmouser = request.data["cmouser"]
+        cmouser = cmouser
         pto.total_days = request.data["total_days"]
         pto.days_used = request.data["days_used"]
         pto.days_remaining = request.data["days_remaining"]
