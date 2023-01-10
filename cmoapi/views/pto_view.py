@@ -62,3 +62,4 @@ class PTOSerializer(serializers.ModelSerializer):
         model = PTO
         fields = ('id', 'cmouser', 'total_days',
                   'days_used', 'days_remaining', )
+        depth = 1

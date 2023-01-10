@@ -59,3 +59,4 @@ class MessageSerializer(serializers.ModelSerializer):
         model = Message
         fields = ('id', 'cmouser', 'category', 'title',
                   'publication_date', 'content', )
+        depth = 2
